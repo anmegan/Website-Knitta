@@ -13,7 +13,7 @@ body {
 }
 
 .wrapper {
-    width: 1100px;
+    width: 1200px;
     margin: auto;
     position: relative;
 }
@@ -27,15 +27,23 @@ body {
     padding: 0px 16px 0px 16px;
 }
 
+.logo{
+    float: left;
+}
+
 .menu {
     float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
 nav {
     width: 100%;
     margin: auto;
     display: flex;
-    line-height: 80px;
+    line-height: 150px;
     position: sticky;
     position: -webkit-sticky; 
     top: 0;
@@ -68,8 +76,13 @@ nav ul li a:hover {
     color: #364f6b;
 }
 
+.kartu-tutor p:hover{
+    color: #fc5185;
+}
+
+
 .desc_pro{
-    font-size: 20px;
+    font-size: 19px;
     font-weight: bold;
     font-family: courier;
     color: #364f6b;
@@ -89,7 +102,8 @@ section {
 
 .desc_knit{
     font-weight:bold ;
-    font-size: 17px;
+    font-size: 19px;
+    color: #364f6b;
 }
 
 button#logout{
@@ -177,8 +191,9 @@ p {
 }
 
 .kartu-tutor img {
-    width: 80%;
-    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
 }
 
 .kartu-tutor p {
@@ -191,7 +206,7 @@ p {
 
 
 .kartu-partner {
-    width: 20%;
+    width: 30%;
     margin: 0 auto;
 }
 
@@ -212,11 +227,14 @@ p {
     flex-wrap: wrap;
     margin: auto;
     background-color: #dedede;
+    border-radius: 20px;
+
 }
 
 .footer-section {
     width: 20%;
     margin: 0 auto;
+    padding:50px 0px 50px 0px;
 }
 
 h3 {
@@ -274,10 +292,10 @@ h3 {
     }
 
     .kartu-tutor {
-        width: 50%;
+        width: 60%;
     }
 
     .kartu-partner {
-        width: 50%;
+        width: 60%;
     }
 }
