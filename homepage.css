@@ -71,8 +71,9 @@ nav ul li a:hover {
 .desc_pro{
     font-size: 20px;
     font-weight: bold;
-    font-family: 'monserrat',;
+    font-family: courier;
     color: #364f6b;
+    
 }
 
 section {
@@ -84,6 +85,11 @@ section {
 .kolom {
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.desc_knit{
+    font-weight:bold ;
+    font-size: 17px;
 }
 
 button#logout{
@@ -102,9 +108,9 @@ button#logout:hover{
 }
 
 .kolom .deskripsi {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
-    font-family: 'comic sans ms';
+    font-family: courier;
     color: #364f6b;
 }
 
