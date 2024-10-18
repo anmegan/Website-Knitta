@@ -26,6 +26,10 @@ form{
     padding:1.3rem;
     margin-bottom:0.4rem;
 }
+.or{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 500px ;
+}
 input{
     color:inherit;
     width:100%;
