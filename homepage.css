@@ -68,6 +68,13 @@ nav ul li a:hover {
     color: #364f6b;
 }
 
+.desc_pro{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'monserrat',;
+    color: #364f6b;
+}
+
 section {
     margin: auto;
     display: flex;
