@@ -77,14 +77,13 @@ section {
     margin-bottom: 50px;
 }
 
-button{
+button#logout{
     color: #fc5185;
-    font-weight: bold;
-    text-align: center;
     padding: 0;
     border: none;
     background: none;
-    
+    font-weight: bolder;
+    text-align: center;
 }
 
 .kolom .deskripsi {
