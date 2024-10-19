@@ -1,120 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <link rel="stylesheet" href="admin.css">
-    <script type="module" src="./admin.js"></script>
-    <script type="module" src="./admin.css"></script>
-    <title>Knitta-admin</title> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Lobster&display=swap" rel="stylesheet">
-    <style>
-    #Object1 {
-        margin-top: 100px;
-        width: 500px;
-        height: 300px;
-        object-position: left;
-    }
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    </style>
-    <script type="module" src="firebaseauth.js"></script>
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="Admin.css">
+
+	<title>SuperAdmin</title>
 </head>
 <body>
-    <nav>
-        <div class="wrapper">
-            <div class="logo">
-                <a href='' img src="Logo Knitta.png" width="100px" height="50px">KNITA.</a>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <button id="logout">Logout</button>
-                </ul>
-            </div>
-        </div>
-    </nav>
-     <!-- untuk home -->
-    <div class="wrapper">
-         <section id="home">
-            <div class="kolom">
-                <p class="deskripsi">Knit Anywhere</p>
-                <h2 style="font-family: 'comic sans ms';">knitta is life</h2>
-                <p class="desc_pro">Katalog Knitta</p>
-                <p><a href="" class="tbl-pink">More About katalog</a></p>
-            </div>
-            <img id ="Object1" style="margin-left: 85px;" src="img/Produk Knitta2.png">
-            </section>
-    
-            <!-- untuk about -->
-            <section id="about">
-                <div class="kolom">
-                    <p class="deskripsi">Grab Yours Now!</p>
-                    <h2>Do not Miss It!</h2>
-                </div>
-                <img src="Produk Knitta.png" width="500px" height="500px"> 
-            </section>
-    
-            <section id="about">
-                <div class="tengah">
-                    <div class="kolom">
-                        <p class="deskripsi"> Meet Our Team</p>
-                        <h2>!</h2>
-                        Behind The Scenes Of Knita</p>
-                    </div>
-    
-                    <div class="tutor-list">
-                        <div class="kartu-tutor">
-                            <img src="img/Fathurrizqa.jpg"/>
-                            <a href="https://www.instagram.com/balova_02?igsh=dnNjOTlqZ2U4dmxi">
-                                <p>Fathurrizqa Balova</p>
-                            </a>
-                        </div>
-                        <div class="kartu-tutor">
-                            <img src="img/megan.JPG"/>
-                            <a href="https://www.instagram.com/anmegannn/profilecard/?igsh=OGc3ZTA0OHEwamcw">
-                                <p>Megan Ananta</p>
-                            </a>
-                        </div>
-                        <div class="kartu-tutor">
-                            <img src="img/prita.jpg"/>
-                            <a href="https://www.instagram.com/prita.th/">
-                                <p>Prita Trivena Hesmono</p>
-                            </a>
-                        </div>
-                        <div class="kartu-tutor">
-                            <img src="img/Yasmin.JPG"/>
-                            <a href="https://www.instagram.com/yasmineszahhra/profilecard/?igsh=MWV5enJkM3FuZXhiNg%3D%3D">
-                                <p>Yasmin Azahra</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-    
-        
-        <div id="about">
-            <div class="wrapper">
-                <div class="footer">
-                    <div class="footer-section">
-                        <h3>Adress</h3>
-                        <p>Jl. Telekomunikasi. 1, Terusan Buahbatu - Bojongsoang, Telkom University, Sukapura, Kec. Dayeuhkolot, Kabupaten Bandung, Jawa Barat 40257</p>
-                    </div>
-                    <div class="footer-section">
-                        <h3>Email</h3>
-                        <p>yasmina.zahra2803@gmail.com   Meganananta@gmail.com     Fathurrizqa@gmail.com    PritaHesmono@gmail.com</p>
-                             
-                    </div>
-                    <div class="footer-section">
-                        <h3>Social Media</h3>
-                        <p>@yasmineszahhra     @Meganananta    @Fathurrizqa     @PritaHesmono</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">SuperAdmin</span>
+			<br />
+			<span class="text">Knitta</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="#">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">My Store</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Analytics</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard Knitta</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Home</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<ul class="box-info">
+				<li>
+					<i class='bx bxs-calendar-check' ></i>
+					<span class="text">
+						<h3>1020</h3>
+						<p>New Order</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-group' ></i>
+					<span class="text">
+						<h3>2834</h3>
+						<p>Visitors</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-dollar-circle' ></i>
+					<span class="text">
+						<h3>$2543</h3>
+						<p>Total Sales</p>
+					</span>
+				</li>
+			</ul>
+
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Recent Orders</h3>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>User</th>
+								<th>Date Order</th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<img src="img/megan.JPG">
+									<p>Megan Ananta</p>
+								</td>
+								<td>17-10-2024</td>
+								<td><span class="status completed">Completed</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/Fathurrizqa.jpg">
+									<p>Faturizqa</p>
+								</td>
+								<td>17-10-2024</td>
+								<td><span class="status pending">Pending</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/Yasmin.JPG">
+									<p>Yasmin A</p>
+								</td>
+								<td>18-10-2024</td>
+								<td><span class="status process">Process</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/prita.jpg">
+									<p>Prita H</p>
+								</td>
+								<td>18-10-2024</td>
+								<td><span class="status pending">Pending</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="script.js"></script>
 </body>
 </html>
