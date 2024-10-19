@@ -72,21 +72,28 @@
     const email=document.getElementById('email').value;
     const password=document.getElementById('password').value;
     const auth=getAuth();
+  
+  signInWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+        const user = userCredential.user;
+        localStorage.setItem('loggedInUser Id', user.uid);
 
-    signInWithEmailAndPassword(auth, email,password)
-    .then((userCredential)=>{
-        showMessage('login is successful', 'signInMessage');
-        const user=userCredential.user;
-        localStorage.setItem('loggedInUserId', user.uid);
-        window.location.href='homepage.html';
-    })
-    .catch((error)=>{
-        const errorCode=error.code;
-        if(errorCode==='auth/invalid-credential'){
-            showMessage('Incorrect Email or Password', 'signInMessage');
+        // Check if the email belongs to the admin
+        if (email === 'Superadmin@gmail.com') {
+            showMessage('Login is successful', 'signInMessage');
+            window.location.href = 'admin.html'; // Redirect to admin page
+        } else {
+            showMessage('Login is successful', 'signInMessage');
+            window.location.href = 'homepage.html'; // Redirect to user homepage
         }
-        else{
+    })
+    .catch((error) => {
+        const errorCode = error.code;
+        if (errorCode === 'auth/invalid-credential') {
+            showMessage('Incorrect Email or Password', 'signInMessage');
+        } else {
             showMessage('Account does not Exist', 'signInMessage');
         }
-    })
+    });
+  
  })
