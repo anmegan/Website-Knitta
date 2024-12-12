@@ -59,3 +59,19 @@ const firebaseConfig = {
         console.error('Error Signing out:', error);
     })
   })
+  document.getElementById('predict-button').addEventListener('click', async () => {
+    const year = document.getElementById('year-input').value;
+    const region = document.getElementById('region-input').value;
+
+    const response = await fetch('/predict', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ year, region }),
+    });
+
+    const result = await response.json();
+    document.getElementById('prediction-text').innerText = `Prediction: ${result.prediction}`;
+  });
+</script>
