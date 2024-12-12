@@ -38,6 +38,23 @@
             </div>
         </div>
     </nav>
+    <div class="login">
+	<h1>Stunting Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="Kode_Kabupaten_Kota" placeholder="Kode_Kabupaten_Kota" required="required" />
+        <input type="text" name="Nama_Kabupaten_Kota" placeholder="Nama_Kabupaten_Kota" required="required" />
+		<input type="text" name="Tahun" placeholder="Tahun" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+    
     <!-- untuk home -->
     <div class="wrapper">
         <section id="home">
