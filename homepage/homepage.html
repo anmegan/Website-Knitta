@@ -23,26 +23,7 @@
     </style>
     <script type="module" src="firebaseauth.js"></script>
 </head>
-<body>
-	<div class="login">
-	<h1>Stunting Prediction</h1>
-
-     <!-- Main Input For Receiving Query to our ML -->
-    <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="Kode_Kabupaten_Kota" placeholder="Kode_Kabupaten_Kota" required="required" />
-        <input type="text" name="Nama_Kabupaten_Kota" placeholder="Nama_Kabupaten_Kota" required="required" />
-		<input type="text" name="Tahun" placeholder="Tahun" required="required" />
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
-    </form>
-
-   <br>
-   <br>
-   {{ prediction_text }}
-
- </div>
-
-
-	
+<>
     <nav>
         <div class="wrapper">
             <div class="logo">
@@ -53,10 +34,12 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <button id="logout">Logout</button>
+                    <li><a href="predictpage.html" class="btn-predict">Prediction</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <!-- untuk home -->
     <div class="wrapper">
         <section id="home">
@@ -134,9 +117,15 @@
             </div>
         </div>
     </div>
-
+    
+    <!--prediction button-->
+    <a href="stunting_prediction.html" class="btn-predict">Prediction</a>
+            </div>
+            <img id="Object1" style="margin-left: 85px;" src="img/Produk Knitta2.png" alt="Produk Knitta"> 
+        </section>
     <div id="copyright">
             &copy; 2024. <b>Knita.</b> All Rights Reserved.
-    </div>    
+    </div>   
+     
 </body>
 </html>

@@ -214,8 +214,6 @@ print("Test data MAE: ", mean_absolute_error(original_yval,val_predict)) # The a
 from google.colab import drive
 drive.mount('/content/drive')
 
-
-
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
 

@@ -95,6 +95,19 @@ button{
     cursor:pointer;
     transition:0.9s;
 }
+.btn-predict {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #ff4081; /* Customize the color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.btn-predict:hover {
+    background-color: #e91e63; /* Darker shade on hover */
+}
 button:hover{
     background:#07001f;
 }
